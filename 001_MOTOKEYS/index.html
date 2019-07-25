@@ -1,0 +1,71 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>MOTOKEYS</title>
+    <link href="https://fonts.googleapis.com/css?family=Bitter|Montserrat" rel="stylesheet">
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+    <main>
+        <h1>MOTOKEYS</h1>
+        <h2>Sandwich Order</h2>
+        <form>
+            <div class="group">
+                <label for="name">Name</label>
+                <div class="input-group">
+                    <input type="text" name="name" id="name" class="field">
+                </div>
+            </div>
+
+            <div class="group">
+                <label for="sandwich_type">Type of Sandwich</label>
+
+                <div class="input-group">
+                    <input type="radio" name="sandwich_type" value="BLT" id="BLT">
+                    <label for="BLT">BLT (Bacon, Lettuce, Tomato)</label> <br>
+
+                    <input type="radio" name="sandwich_type" value="double_decker" id="double_decker">
+                    <label for="double_decker">Double Decker</label><br>
+
+                    <input type="radio" name="sandwich_type" value="crispy_chicken_teriyaki" id="crispy_chicken_teriyaki">
+                    <label for="crispy_chicken_teriyaki">Crispy Chicken Teriyaki</label>
+                </div>
+            </div>
+
+            <div class="group">
+                <label for="sauce">Sandwich Sauce</label>
+                
+                <div class="input-group">
+                    <select name="sauce" class="field" id="sauce">
+                        <option value="mayonese">Mayonese</option>
+                        <option value="barbeque">Barbeque</option>
+                        <option value="secret">Secret Sauce</option>
+                    </select>
+                </div>
+            </div>
+
+            <div class="group">
+                <label for="">Optional Extras</label>
+                <div class="input-group">
+                    <input type="checkbox" name="extra" value="cheese" id="cheese">
+                    <label for="cheese">Cheese</label> <br>
+
+                    <input type="checkbox" name="extra" value="organic_vegetables" id="organic_vegetables">
+                    <label for="organic_vegetables">Organic Vegetables</label>
+
+                </div>
+            </div>
+
+            <div class="group">
+                <label for="instructions">Delivery instructions</label>
+                <div class="input-group">
+                    <textarea id="instructions" name="instructions" class="field"></textarea>
+                </div>
+            </div>
+
+            <input type="submit" class="submit-button" value="Send my order">
+        </form>
+    </main>
+</body>
+</html>

@@ -1,0 +1,76 @@
+body {
+    background-image: url(https://images.unsplash.com/photo-1539252554453-80ab65ce3586?ixlib=rb-1.2.1&ixid=eyJhcHBfaWQiOjEyMDd9&auto=format&fit=crop&w=934&q=80);
+}
+
+main {
+    background: #1f1f1f99;
+    border-radius: 5px;
+    color: #ffffff;
+    font-family: 'Montserrat', sans-serif;
+    margin: auto;
+    padding: 20px 40px 40px;
+    width: 500px;
+}
+
+h1 {
+    text-align: center;
+    font-family: 'Bitter';
+    color: #39dfe5;
+    font-weight: 200;
+    padding-bottom: 20px;
+    border-bottom: 1px solid #ddd2be;
+    margin-bottom: 40px;
+    font-variant: small-caps;
+}
+
+h2 {
+    text-align: center;
+    padding-bottom: 20px;
+}
+
+
+.group {
+    margin-bottom: 20px;
+    white-space: nowrap;
+}
+
+.group > label {
+    display: inline-block;
+}
+
+.group > label,
+.group .input-group {
+    width: 50%;
+    display: inline-block;
+    vertical-align: top;
+}
+
+input,
+textarea,
+select {
+    box-sizing: border-box;
+}
+
+.field {
+    border: 1px solid #ababab;
+    border-radius: 3px;
+    background: #fff;
+    padding: 11px;
+    width: 100%;
+}
+
+.submit-button {
+    background: #3cbabe;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    padding: 20px;
+    font-size: 15px;
+    color: white;
+    text-transform: uppercase;
+    width: 100%;
+}
+
+.submit-button:hover {
+    opacity: 0.9;
+}
