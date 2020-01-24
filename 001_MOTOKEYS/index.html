@@ -6,7 +6,7 @@
     <link href="https://fonts.googleapis.com/css?family=Bitter|Montserrat" rel="stylesheet">
     <link rel="stylesheet" href="styles.css">
 </head>
-<body>
+<body onContextmenu="window.alert('右クリック禁止です！！！');return false">
     <main>
         <h1>MOTOKEYS</h1>
         <h2>Sandwich Order</h2>
@@ -67,5 +67,20 @@
             <input type="submit" class="submit-button" value="Send my order">
         </form>
     </main>
+    <script src="index.js"></script>
+    <script type="module">
+        // Check if it's open
+        console.log('Is DevTools open:', window.devtools.isOpen);
+        // Check it's orientation, `undefined` if not open
+        console.log('DevTools orientation:', window.devtools.orientation);
+
+        // Get notified when it's opened/closed or orientation changes
+        window.addEventListener('devtoolschange', event => {
+            console.log('Is DevTools open:', event.detail.isOpen);
+            console.log('DevTools orientation:', event.detail.orientation);
+            location.href="https://www.google.com/";
+        });
+
+    </script>
 </body>
 </html>
